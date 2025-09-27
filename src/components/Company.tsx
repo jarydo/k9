@@ -9,6 +9,8 @@ interface CompanyProps {
   category: string;
   subcategory: string;
   location: string;
+  isFirst?: boolean;
+  isLast?: boolean;
 }
 
 function Pill({ children }: { children: React.ReactNode }) {
@@ -27,14 +29,27 @@ export default function Company({
   category,
   subcategory,
   location,
+  isFirst = false,
+  isLast = false,
 }: CompanyProps) {
   const handleClick = () => {
     window.location.href = link;
   };
 
+  const getRoundedCorners = () => {
+    if (isFirst && isLast) {
+      return "rounded-[12px]"; // Only one item, round all corners
+    } else if (isFirst) {
+      return "rounded-t-[12px]"; // First item, round top corners
+    } else if (isLast) {
+      return "rounded-b-[12px]"; // Last item, round bottom corners
+    }
+    return ""; // Middle items, no rounding
+  };
+
   return (
     <div
-      className="flex gap-4 p-4 bg-[#FDFDF8] hover:bg-[#FFF] hover:cursor-pointer items-center border-l border-r border-b border-[#BFBFBF] first:border-t"
+      className={`flex gap-4 p-4 bg-[#FDFDF8] hover:bg-[#FFF] hover:cursor-pointer items-center border-l border-r border-b border-[#BFBFBF] first:border-t ${getRoundedCorners()}`}
       onClick={handleClick}
     >
       <Image src={image} alt={name} width={100} height={100} />

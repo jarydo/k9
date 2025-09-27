@@ -41,7 +41,7 @@ const companies = [
   {
     name: "Pawlantir",
     description:
-      "We power real-time, AI-driven decisions for canine defence, from pet store flors to the alleyway.",
+      "We power real-time, AI-driven decisions for canine defence, from pet store floors to the alleyway.",
     image: "/companies/pawlantir.png",
     link: "/ERROR",
     category: "GOVERNMENT",
@@ -129,8 +129,13 @@ export default function Companies() {
         </p>
       </div>
       <div className="space-y-0">
-        {companies.map((company) => (
-          <Company key={company.name} {...company} />
+        {companies.map((company, index) => (
+          <Company
+            key={company.name}
+            {...company}
+            isFirst={index === 0}
+            isLast={index === companies.length - 1}
+          />
         ))}
       </div>
     </div>
