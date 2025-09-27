@@ -370,6 +370,17 @@ export default function FureverAI() {
             <div className="results-card">
               <h2>AI Analysis Complete</h2>
 
+              {uploadedImage && (
+                <div className="uploaded-image-container">
+                  <img
+                    src={uploadedImage}
+                    alt="Uploaded pet photo"
+                    className="uploaded-image"
+                  />
+                  <p className="image-caption">You</p>
+                </div>
+              )}
+
               {recommendation === "thumbs_up" ? (
                 <div className="result-positive">
                   <div className="result-icon">✅</div>
