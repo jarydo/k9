@@ -3,6 +3,24 @@ import Header from "@/components/Header";
 
 const companies = [
   {
+    name: "Furever AI",
+    description: "UnbiasedAI-driven insights for euthanasia decision making.",
+    image: "/companies/fureverai.png",
+    link: "/companies/fureverai",
+    category: "B2B",
+    subcategory: "HEALTHCARE SERVICES",
+    location: "San Francisco, CA, USA",
+  },
+  {
+    name: "Heat",
+    description: "Designed to be neutered.",
+    image: "/companies/heat.png",
+    link: "/companies/heat",
+    category: "CONSUMER",
+    subcategory: "SOCIAL",
+    location: "San Francisco, CA, USA",
+  },
+  {
     name: "DoorDachshund",
     description: "Kibble delivery.",
     image: "/companies/doordachshund.png",
@@ -38,24 +56,6 @@ const companies = [
     link: "/chowzempic.png",
     category: "HEALTHCARE",
     subcategory: "CONSUMER HEALTH AND WELLNESS",
-    location: "San Francisco, CA, USA",
-  },
-  {
-    name: "Furever AI",
-    description: "UnbiasedAI-driven insights for euthanasia decision making.",
-    image: "/companies/fureverai.png",
-    link: "/companies/fureverai",
-    category: "B2B",
-    subcategory: "HEALTHCARE SERVICES",
-    location: "San Francisco, CA, USA",
-  },
-  {
-    name: "Heat",
-    description: "Designed to be neutered.",
-    image: "/companies/heat.png",
-    link: "/companies/heat",
-    category: "CONSUMER",
-    subcategory: "SOCIAL",
     location: "San Francisco, CA, USA",
   },
   {
@@ -114,7 +114,7 @@ export default function Companies() {
         <h1 className="text-4xl font-bold">Startup Directory</h1>
         <p>
           Since 2025, we have invested in over 10 companies that have a combined
-          valuation of over 800B "good boys".
+          valuation of over $800B "good boys".
         </p>
         <p>
           If you are a dog and would like to find jobs at these startups, visit{" "}
