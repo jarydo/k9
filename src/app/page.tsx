@@ -11,6 +11,8 @@ export default function Home() {
         width={1000}
         height={1000}
         className="w-full h-auto"
+        sizes="100vw"
+        priority
       />
       <Image
         src="/body1.png"
@@ -18,6 +20,7 @@ export default function Home() {
         width={1000}
         height={1000}
         className="w-full h-auto"
+        sizes="100vw"
       />
       <Image
         src="/body2.png"
@@ -25,6 +28,7 @@ export default function Home() {
         width={1000}
         height={1000}
         className="w-full h-auto"
+        sizes="100vw"
       />
       <Image
         src="/body3.png"
@@ -32,6 +36,7 @@ export default function Home() {
         width={1000}
         height={1000}
         className="w-full h-auto"
+        sizes="100vw"
       />
     </div>
   );
