@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F5F5EE;
+  --background: #f5f5ee;
   --foreground: #171717;
 }
 
@@ -9,4 +9,374 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-avenir);
+}
+
+/* Dog Tinder Demo Styles */
+.app-container {
+  max-width: 414px; /* iPhone Pro Max width */
+  margin: 0 auto;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff6b6b, #ffa726);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  padding: 20px;
+  color: #ff4444;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 12px;
+  margin: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  margin: 10px;
+  padding: 15px 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-icon {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  max-width: 60px;
+}
+
+.nav-icon:hover {
+  background: #e9ecef;
+  border-color: #dee2e6;
+  transform: scale(1.05);
+}
+
+.filter-icon:hover {
+  background: #e3f2fd;
+  border-color: #2196f3;
+}
+
+.home-icon:hover {
+  background: #fff3e0;
+  border-color: #ff9800;
+}
+
+.matches-icon:hover {
+  background: #fce4ec;
+  border-color: #e91e63;
+}
+
+.settings-icon:hover {
+  background: #f3e5f5;
+  border-color: #9c27b0;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.dog-card {
+  width: 350px;
+  height: 600px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+  display: flex;
+  flex-direction: column;
+}
+
+.dog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.card-content {
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.5rem;
+}
+
+.breed {
+  color: #666;
+  margin: 0 0 8px 0;
+}
+
+.bio {
+  margin: 8px 0;
+  color: #333;
+}
+
+.distance {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.tag {
+  background: #f0f0f0;
+  color: #666;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-info {
+  margin: 12px 0 0 0;
+  padding: 8px 0;
+  border-top: 1px solid #eee;
+}
+
+.relationship-status,
+.occupation {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.status-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.worst-habit {
+  margin: 8px 0;
+  padding: 8px 12px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  border-left: 4px solid #f39c12;
+}
+
+.habit-label {
+  font-weight: 600;
+  color: #8b4513;
+  margin: 2px 0;
+  font-size: 0.8rem;
+}
+
+.habit-text {
+  color: #8b4513;
+  font-style: italic;
+  margin: 2px 0;
+  font-size: 0.8rem;
+}
+
+.swipe-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+.current-card {
+  position: relative;
+}
+
+.like-indicator,
+.pass-indicator {
+  position: absolute;
+  top: 100px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 3px solid;
+}
+
+.like-indicator {
+  right: 20px;
+  color: #4caf50;
+  border-color: #4caf50;
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.pass-indicator {
+  left: 20px;
+  color: #f44336;
+  border-color: #f44336;
+  background: rgba(244, 67, 54, 0.1);
+}
+
+.swipe-buttons {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.pass-btn,
+.like-btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.1s;
+  font-size: 1.5rem;
+}
+
+.pass-btn {
+  background: white;
+  color: #f44336;
+  box-shadow: 0 4px 12px rgba(244, 67, 54, 0.3);
+}
+
+.like-btn {
+  background: white;
+  color: #4caf50;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.pass-btn:hover,
+.like-btn:hover {
+  transform: scale(1.1);
+}
+
+.pass-btn.disabled,
+.like-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.pass-btn.disabled:hover,
+.like-btn.disabled:hover {
+  transform: none;
+}
+
+.no-more-cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 20px;
+}
+
+.no-more-cards button {
+  padding: 12px 24px;
+  background: white;
+  border: none;
+  border-radius: 24px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Animation styles */
+.animation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bone-animation {
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+
+.poop-animation {
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+
+.confetti {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+
+.negative-emoji {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .app-container {
+    max-width: 100%;
+  }
+
+  .dog-card {
+    width: calc(100vw - 40px);
+    max-width: 350px;
+  }
 }
