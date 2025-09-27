@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 const companies = [
   {
     name: "Furever AI",
-    description: "UnbiasedAI-driven insights for euthanasia decision making.",
+    description: "Unbiased AI-driven insights for euthanasia decision making.",
     image: "/companies/fureverai.png",
     link: "/companies/fureverai",
     category: "B2B",
@@ -81,7 +81,7 @@ const companies = [
     name: "PeePoint",
     description: "Mark your territory.",
     image: "/companies/peepoint.png",
-    link: "https://www.google.com/maps",
+    link: "https://www.google.com/maps/d/u/0/edit?hl=en&mid=189S3UkU9eKt-YPaTRcm-rWWlUmsH3bs&ll=43.662015966504654%2C-79.38765046926233&z=13",
     category: "CONSUMER",
     subcategory: "TRAVEL, LEISURE AND TOURISM",
     location: "San Francisco, CA, USA",
