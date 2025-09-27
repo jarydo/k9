@@ -29,7 +29,7 @@ export default function Company({
   location,
 }: CompanyProps) {
   const handleClick = () => {
-    window.open(link, "_blank");
+    window.location.href = link;
   };
 
   return (
