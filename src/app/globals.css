@@ -975,3 +975,95 @@ body {
   max-width: 600px;
   margin: 0 auto;
 }
+
+/* Desktop styles for Heat app */
+@media (min-width: 768px) {
+  .app-container {
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+  }
+
+  .app-header {
+    margin: 0;
+    border-radius: 0;
+    padding: 1rem 2rem;
+    flex-shrink: 0;
+  }
+
+  .header-center h1 {
+    font-size: 2.5rem;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .dog-card {
+    width: 350px;
+    height: 450px;
+  }
+
+  .dog-card img {
+    height: 200px;
+  }
+
+  .card-info {
+    padding: 1rem;
+  }
+
+  .card-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .swipe-container {
+    padding: 1rem;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .current-card {
+    position: relative;
+  }
+
+  .swipe-buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    pointer-events: none;
+  }
+
+  .pass-btn,
+  .like-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    pointer-events: auto;
+  }
+
+  .bottom-nav {
+    margin: 0;
+    border-radius: 0;
+    padding: 1rem 2rem;
+    flex-shrink: 0;
+  }
+
+  .nav-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}

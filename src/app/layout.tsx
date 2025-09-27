@@ -17,9 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${avenir.variable} antialiased mx-16 my-6`}>
-        {children}
-      </body>
+      <body className={`${avenir.variable} antialiased`}>{children}</body>
     </html>
   );
 }
