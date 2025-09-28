@@ -111,12 +111,12 @@ export default function Companies() {
     <div className="max-w-[1000px] mx-auto px-4 my-6">
       <Header />
       <div className="flex flex-col gap-8 py-8">
-        <h1 className="text-4xl font-bold">Startup Directory</h1>
-        <p>
+        <h1 className="text-2xl md:text-4xl font-bold">Startup Directory</h1>
+        <p className="text-sm md:text-base">
           Since 2025, we have invested in over 10 companies that have a combined
           valuation of over 800B "good boys".
         </p>
-        <p>
+        <p className="text-sm md:text-base">
           If you are a dog and would like to find jobs at these startups, visit{" "}
           <a
             href="https://careers.petsmart.com/"

@@ -46,7 +46,7 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row items-start gap-6 p-6 bg-white rounded-lg"
+              className="flex flex-row items-start gap-6 p-6 bg-white rounded-lg"
             >
               {/* Testimonial image */}
               <div className="w-20 h-20 flex-shrink-0">

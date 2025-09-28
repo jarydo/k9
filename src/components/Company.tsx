@@ -52,13 +52,13 @@ export default function Company({
       className={`flex gap-4 p-4 bg-[#FDFDF8] hover:bg-[#FFF] hover:cursor-pointer items-center border-l border-r border-b border-[#BFBFBF] first:border-t ${getRoundedCorners()}`}
       onClick={handleClick}
     >
-      <Image src={image} alt={name} width={100} height={100} />
+      <Image src={image} alt={name} width={80} height={80} />
       <div className="flex flex-col gap-[1px]">
         <div className="flex gap-2 items-baseline">
-          <p className="font-bold text-[18px]">{name}</p>
-          <p className="text-[12px]">{location}</p>
+          <p className="font-bold text-[16px] md:text-[18px]">{name}</p>
+          <p className="text-[10px] md:text-[12px]">{location}</p>
         </div>
-        <p className="text-[14px] mb-2">{description}</p>
+        <p className="text-[12px] md:text-[14px] mb-2">{description}</p>
         <div className="flex gap-2 flex-wrap">
           <Pill>
             <span className="capitalize flex gap-2 items-center">
