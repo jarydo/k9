@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const articles = [
   {
-    title: "Scoobert: Building k-AI-nine Agents That Can Do Anything",
+    title: "Scoobert: Building CAInine Agents That Can Do Anything",
     date: "2 days ago",
     image: "/news1.png",
   },
