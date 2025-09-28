@@ -7,7 +7,7 @@ export default function HeroSection() {
     <div className="w-full">
       {/* Full-width white background section */}
       <div className="w-full bg-white relative">
-        <div className="max-w-[1000px] mx-auto px-4">
+        <div className="max-w-[1100px] mx-auto px-4">
           <div className="flex flex-col md:flex-row min-h-[500px]">
             {/* Left side - Text content */}
             <div className="flex-1 flex flex-col justify-center py-12 md:pr-8 items-center md:items-start">
@@ -38,6 +38,17 @@ export default function HeroSection() {
               />
             </div>
           </div>
+        </div>
+
+        {/* Full-width image extension */}
+        <div className="hidden md:block absolute top-0 right-0 w-1/2 h-full">
+          <Image
+            src="/garry_and_sam.webp"
+            alt="K9 Combinator event"
+            width={600}
+            height={500}
+            className="w-full h-full object-cover"
+          />
         </div>
 
         {/* Stats overlays - centered across entire component */}

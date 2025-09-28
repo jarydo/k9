@@ -37,7 +37,7 @@ const testimonials = [
 export default function TestimonialsSection() {
   return (
     <div className="py-16 bg-white">
-      <div className="max-w-[1000px] mx-auto px-4">
+      <div className="max-w-[1100px] mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">
           Hear more from the community.
         </h2>
