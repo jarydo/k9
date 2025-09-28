@@ -23,7 +23,7 @@ export default function HeroSection() {
                   (window.location.href = "https://forms.gle/rzpnFDEZKDuMHwEY7")
                 }
               >
-                Apply to K9
+                Apply to K9C
               </button>
             </div>
 
