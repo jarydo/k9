@@ -24,7 +24,6 @@ export default function Header() {
           />
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
-            <a href="/">About</a>
             <a href="/companies">Companies</a>
             <a href="https://careers.petsmart.com/" target="_blank">
               Startup Jobs
@@ -43,7 +42,7 @@ export default function Header() {
 
         {/* Desktop Apply Button */}
         <button
-          className="hidden md:block bg-[#F26522] text-[#FFF] px-4 py-2 rounded-md cursor-pointer"
+          className="hidden md:block bg-[#F26522] text-[#FFF] px-4 py-2 rounded-md cursor-pointer hover:bg-[#e55a1a] transition-colors"
           onClick={() =>
             (window.location.href = "https://forms.gle/rzpnFDEZKDuMHwEY7")
           }
@@ -79,9 +78,6 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden mt-4 pb-4">
           <div className="flex flex-col space-y-4">
-            <a href="/" className="text-[16px] hover:text-[#F26522]">
-              About
-            </a>
             <a href="/companies" className="text-[16px] hover:text-[#F26522]">
               Companies
             </a>

@@ -114,7 +114,7 @@ export default function Companies() {
         <h1 className="text-4xl font-bold">Startup Directory</h1>
         <p>
           Since 2025, we have invested in over 10 companies that have a combined
-          valuation of over $800B "good boys".
+          valuation of over 800B "good boys".
         </p>
         <p>
           If you are a dog and would like to find jobs at these startups, visit{" "}

@@ -1,43 +1,23 @@
-import Image from "next/image";
 import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import NewsSection from "@/components/NewsSection";
 
 export default function Home() {
   return (
-    <div className="max-w-[1000px] mx-auto px-4 my-6">
-      <Header />
-      <Image
-        src="/hero.png"
-        alt="hero"
-        width={1000}
-        height={1000}
-        className="w-full h-auto"
-        sizes="100vw"
-        priority
-      />
-      <Image
-        src="/body1.png"
-        alt="body1"
-        width={1000}
-        height={1000}
-        className="w-full h-auto"
-        sizes="100vw"
-      />
-      <Image
-        src="/body2.png"
-        alt="body2"
-        width={1000}
-        height={1000}
-        className="w-full h-auto"
-        sizes="100vw"
-      />
-      <Image
-        src="/body3.png"
-        alt="body3"
-        width={1000}
-        height={1000}
-        className="w-full h-auto"
-        sizes="100vw"
-      />
+    <div>
+      <div className="max-w-[1000px] mx-auto px-4 mt-6">
+        <Header />
+      </div>
+      <HeroSection />
+      <div className="max-w-[1000px] mx-auto px-4 mb-6">
+        <AboutSection />
+      </div>
+      <TestimonialsSection />
+      <div className="max-w-[1000px] mx-auto px-4 my-6">
+        <NewsSection />
+      </div>
     </div>
   );
 }
