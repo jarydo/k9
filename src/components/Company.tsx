@@ -59,7 +59,7 @@ export default function Company({
           <p className="text-[12px]">{location}</p>
         </div>
         <p className="text-[14px] mb-2">{description}</p>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-wrap">
           <Pill>
             <span className="capitalize flex gap-2 items-center">
               <Image src="/logo.svg" alt="logo" width={16} height={16} /> FALL
