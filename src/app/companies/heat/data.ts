@@ -33,7 +33,7 @@ export const dogProfiles: DogProfile[] = [
     age: 2,
     breed: "Border Collie",
     image:
-      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=600&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?w=400&h=600&fit=crop&crop=face",
     bio: "Smart and playful. Great with kids!",
     distance: 1,
     tags: ["Chases tail", "Smart", "Energetic", "Loves puzzles"],
@@ -47,7 +47,7 @@ export const dogProfiles: DogProfile[] = [
     age: 4,
     breed: "German Shepherd",
     image:
-      "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=600&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1655046393886-dc559882e77c?w=400&h=600&fit=crop&crop=face",
     bio: "Loyal and protective. Loves cuddles!",
     distance: 3,
     tags: ["Protective", "Loyal", "Good guard", "Cuddle bug"],
@@ -61,7 +61,7 @@ export const dogProfiles: DogProfile[] = [
     age: 1,
     breed: "French Bulldog",
     image:
-      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400&h=600&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=600&fit=crop&crop=face",
     bio: "Adorable and cuddly. Perfect apartment dog!",
     distance: 0.5,
     tags: ["Snorts", "Cute", "Lazy", "Loves naps"],
@@ -75,7 +75,7 @@ export const dogProfiles: DogProfile[] = [
     age: 5,
     breed: "Labrador Mix",
     image:
-      "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=400&h=600&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1537204696486-967f1b7198c8?w=400&h=600&fit=crop&crop=face",
     bio: "Gentle giant who loves water and treats!",
     distance: 4,
     tags: ["Water lover", "Gentle", "Food motivated", "Swimmer"],
@@ -89,7 +89,7 @@ export const dogProfiles: DogProfile[] = [
     age: 2,
     breed: "Beagle",
     image:
-      "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=600&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400&h=600&fit=crop&crop=face",
     bio: "Curious and energetic. Great for adventures!",
     distance: 2.5,
     tags: ["Curious", "Adventurous", "Howler", "Explorer"],
@@ -103,7 +103,7 @@ export const dogProfiles: DogProfile[] = [
     age: 6,
     breed: "Boxer",
     image:
-      "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=400&h=600&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1558349699-1e1c38c05eeb?w=400&h=600&fit=crop&crop=face",
     bio: "Playful and goofy. Loves to make you laugh!",
     distance: 1.5,
     tags: ["Goofy", "Playful", "Clumsy", "Entertainer"],
@@ -117,7 +117,7 @@ export const dogProfiles: DogProfile[] = [
     age: 3,
     breed: "Cocker Spaniel",
     image:
-      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=600&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1580768581776-6e6eefd20b53?w=400&h=600&fit=crop&crop=face",
     bio: "Sweet and gentle. Perfect family dog!",
     distance: 3.5,
     tags: ["Sweet", "Gentle", "Family oriented", "Loving"],
@@ -131,7 +131,7 @@ export const dogProfiles: DogProfile[] = [
     age: 4,
     breed: "Rottweiler",
     image:
-      "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=600&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1629956737374-f012cb3e875f?w=400&h=600&fit=crop&crop=face",
     bio: "Big heart in a big body. Very loyal!",
     distance: 5,
     tags: ["Loyal", "Big heart", "Protective", "Gentle giant"],
@@ -145,7 +145,7 @@ export const dogProfiles: DogProfile[] = [
     age: 2,
     breed: "Pomeranian",
     image:
-      "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400&h=600&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1687702563085-2f550461f24c?w=400&h=600&fit=crop&crop=face",
     bio: "Small but mighty. Loves attention and treats!",
     distance: 1.2,
     tags: ["Sassy", "Attention seeker", "Barky", "Diva"],
