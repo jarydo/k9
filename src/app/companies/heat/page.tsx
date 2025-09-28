@@ -10,7 +10,9 @@ export default function Home() {
           <h1>HEAT</h1>
         </div>
       </header>
-      <SwipeStack />
+      <main className="app-main">
+        <SwipeStack />
+      </main>
       <nav className="bottom-nav">
         <button className="nav-icon filter-icon" title="Filter">
           🔍

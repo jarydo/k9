@@ -25,16 +25,22 @@ export default function SwipeStack() {
   const handleDragEnd = (event: any, info: PanInfo) => {
     if (isProcessing) return;
 
-    const threshold = 100;
+    // Lower threshold for mobile - easier to swipe
+    const threshold = 80;
+    const velocity = Math.abs(info.velocity.x);
 
-    if (info.offset.x > threshold) {
+    // Consider both distance and velocity for better mobile experience
+    if (info.offset.x > threshold || (info.offset.x > 50 && velocity > 500)) {
       // Swipe right - like
       setIsProcessing(true);
       setExitDirection("right");
       setAnimationType("like");
       setShowAnimation(true);
       setTimeout(() => nextCard(), 200);
-    } else if (info.offset.x < -threshold) {
+    } else if (
+      info.offset.x < -threshold ||
+      (info.offset.x < -50 && velocity > 500)
+    ) {
       // Swipe left - pass
       setIsProcessing(true);
       setExitDirection("left");
@@ -160,6 +166,8 @@ export default function SwipeStack() {
       <motion.div
         drag="x"
         dragConstraints={{ left: -200, right: 200 }}
+        dragElastic={0.2}
+        dragMomentum={false}
         style={{ x, rotate, opacity }}
         animate={
           exitDirection
@@ -171,6 +179,7 @@ export default function SwipeStack() {
         }
         onDragEnd={handleDragEnd}
         className="current-card"
+        whileTap={{ scale: 0.95 }}
       >
         <DogCard profile={dogProfiles[currentIndex]} />
 

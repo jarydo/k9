@@ -46,6 +46,13 @@ export default function FureverAI() {
     }
   };
 
+  const handleMobileUpload = () => {
+    // For mobile devices, trigger the file input
+    if (fileInputRef.current) {
+      fileInputRef.current.click();
+    }
+  };
+
   const handleDragOver = (event: React.DragEvent) => {
     event.preventDefault();
     setIsDragOver(true);
@@ -128,19 +135,20 @@ export default function FureverAI() {
                 onDragOver={handleDragOver}
                 onDragLeave={handleDragLeave}
                 onDrop={handleDrop}
-                onClick={() => fileInputRef.current?.click()}
+                onClick={handleMobileUpload}
               >
                 <input
                   ref={fileInputRef}
                   type="file"
                   accept="image/*"
+                  capture="environment"
                   onChange={handleFileInput}
                   id="photo-upload"
                   className="file-input"
                 />
                 <label htmlFor="photo-upload" className="upload-label">
                   <div className="upload-icon">📸</div>
-                  <p>Click to upload or drag and drop</p>
+                  <p>Tap to upload from gallery or camera</p>
                   <p className="upload-formats">JPG, PNG, HEIC supported</p>
                 </label>
               </div>
