@@ -15,10 +15,12 @@ body {
 .app-container {
   max-width: 414px; /* iPhone Pro Max width */
   margin: 0 auto;
-  height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
   background: linear-gradient(135deg, #ff6b6b, #ffa726);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .app-header {
@@ -378,7 +380,8 @@ body {
   .app-container {
     max-width: 100%;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
+    max-height: 100dvh;
     margin: 0;
     border-radius: 0;
     box-shadow: none;
@@ -415,7 +418,8 @@ body {
   .app-main {
     flex: 1;
     min-height: 0;
-    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .swipe-container {
@@ -431,8 +435,8 @@ body {
   }
 
   .dog-card {
-    width: calc(100vw - 20px);
-    max-width: 350px;
+    width: calc(100vw - 40px);
+    max-width: 300px;
     touch-action: pan-x;
     user-select: none;
     -webkit-user-select: none;
@@ -446,7 +450,8 @@ body {
 
   /* Furever AI Mobile Styles */
   .furever-ai {
-    height: 100vh;
+    height: 100dvh;
+    max-height: 100dvh;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -454,18 +459,18 @@ body {
   }
 
   .ai-header {
-    padding: 0.3rem 0;
+    padding: 0.2rem 0;
     flex-shrink: 0;
   }
 
   .header-content h1 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 0;
   }
 
   .tagline {
-    font-size: 0.7rem;
-    margin: 0.2rem 0 0 0;
+    font-size: 0.6rem;
+    margin: 0.1rem 0 0 0;
   }
 
   .ai-main {
@@ -544,13 +549,13 @@ body {
   }
 
   .ai-footer {
-    padding: 0.2rem;
+    padding: 0.1rem;
     flex-shrink: 0;
   }
 
   .disclaimer {
-    font-size: 0.5rem;
-    line-height: 1.2;
+    font-size: 0.45rem;
+    line-height: 1.1;
   }
 
   .processing-message {
@@ -612,9 +617,13 @@ body {
 
 /* Furever AI Styles */
 .furever-ai {
-  min-height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .ai-header {
@@ -643,6 +652,8 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
+  flex: 1;
+  overflow-y: auto;
 }
 
 .upload-card,
@@ -1227,6 +1238,7 @@ body {
   padding: 2rem;
   background: #f8fafc;
   border-top: 1px solid #e2e8f0;
+  flex-shrink: 0;
 }
 
 .disclaimer {

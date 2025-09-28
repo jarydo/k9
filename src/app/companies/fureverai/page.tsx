@@ -28,25 +28,39 @@ export default function FureverAI() {
   ];
 
   const handleImageUpload = (file: File) => {
+    console.log("File received:", file.name, file.type, file.size);
+
     if (file && file.type.startsWith("image/")) {
       const reader = new FileReader();
       reader.onload = (e) => {
+        console.log("FileReader loaded successfully");
         setUploadedImage(e.target?.result as string);
         setCurrentStep("processing");
         startFakeProcessing();
       };
+      reader.onerror = (e) => {
+        console.error("FileReader error:", e);
+      };
       reader.readAsDataURL(file);
+    } else {
+      console.error("Invalid file type:", file?.type);
     }
   };
 
   const handleFileInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log("File input changed");
     const file = event.target.files?.[0];
     if (file) {
       handleImageUpload(file);
+    } else {
+      console.log("No file selected");
     }
+    // Reset the input value to allow selecting the same file again
+    event.target.value = "";
   };
 
   const handleMobileUpload = () => {
+    console.log("Mobile upload triggered");
     // For mobile devices, trigger the file input
     if (fileInputRef.current) {
       fileInputRef.current.click();
@@ -136,21 +150,22 @@ export default function FureverAI() {
                 onDragLeave={handleDragLeave}
                 onDrop={handleDrop}
                 onClick={handleMobileUpload}
+                style={{ cursor: "pointer" }}
               >
                 <input
                   ref={fileInputRef}
                   type="file"
-                  accept="image/*"
-                  capture="environment"
+                  accept="image/*,image/heic,image/heif"
                   onChange={handleFileInput}
                   id="photo-upload"
                   className="file-input"
+                  style={{ display: "none" }}
                 />
-                <label htmlFor="photo-upload" className="upload-label">
+                <div className="upload-label">
                   <div className="upload-icon">📸</div>
                   <p>Tap to upload from gallery or camera</p>
                   <p className="upload-formats">JPG, PNG, HEIC supported</p>
-                </label>
+                </div>
               </div>
             </div>
           </div>
