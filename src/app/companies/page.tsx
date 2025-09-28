@@ -108,7 +108,7 @@ const companies = [
 
 export default function Companies() {
   return (
-    <div className="mx-16 my-6">
+    <div className="max-w-[1000px] mx-auto px-4 my-6">
       <Header />
       <div className="flex flex-col gap-8 py-8">
         <h1 className="text-4xl font-bold">Startup Directory</h1>

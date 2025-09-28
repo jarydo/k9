@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <div className="mx-16 my-6">
+    <div className="max-w-[1000px] mx-auto px-4 my-6">
       <Header />
       <Image
         src="/hero.png"
